@@ -163,16 +163,19 @@ header .logo {
 }
 
 .intro .container h1 {
-  font-size: 3.3rem;
+  font-size: 3.7rem;
   padding: 1rem;
+  font-weight: 600;
 }
 
 .intro .container h4 {
-  padding: 1rem;
+  padding: 0 0 1rem;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
-.intro-action {
-  margin-top: 2rem;;
+.call-to-action {
+  margin-top: 2rem;
 }
 
 /* DESIGNED FOR THE FUTURE */
