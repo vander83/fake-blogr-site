@@ -8,6 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
  
   <link rel="stylesheet" href="style.css">
 
@@ -24,36 +25,36 @@
       </div>
     
       <nav class="header-nav">
-        <ul class="main-menu">
-          <li class="main-menu-heading">Product
+        <div class="main-menu">
+          <div class="main-menu-heading flex"><a href="#">Product</a><i class="fas fa-chevron-down"></i>
             <ul class="main-menu-dropdown">
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
             </ul>
-          </li>
-          <li class="main-menu-heading">Company
+          </div>
+          <div class="main-menu-heading flex"><a href="#">Company</a><i class="fas fa-chevron-down"></i>
             <ul class="main-menu-dropdown">
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
+              <li><a href="#">About</li></a>
+              <li><a href="#">Team</li></a>
+              <li><a href="#">Blog</li></a>
+              <li><a href="#">Careers</li></a>
             </ul>
-          </li>
-          <li class="main-menu-heading">Connect
+          </div>
+          <div class="main-menu-heading flex"><a href="#">Connect</a><i class="fas fa-chevron-down"></i>
             <ul class="main-menu-dropdown">
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
+              <li><a href="#">Contact</li></a>
+              <li><a href="#">Newsletter</li></a>
+              <li><a href="#">LinkedIn</li></a>
             </ul>
-          </li>
-        </ul>     
+          </div>
+        </div>     
 
-        <div class="account-actions">
-          <div class="btn log-in">Login</div>
-          <div class="btn btn-white sign-up">Sign Up</div>
+        <div class="account-actions flex">
+          <div class="log-in"><a href="#">Login</a></div>
+          <a href="#"><div class="sign-up btn-white">Sign Up</div></a>
         </div>
       </nav>
     </div>
@@ -64,13 +65,13 @@
       <h1>A modern publishing platform</h1>
       <h4>Grow your audience and build your online brand</h4>
       <div class="call-to-action flex">
-        <a href="#"><div class="intro-action btn btn-white">Start for Free</div></a>
-        <a href="#"><div class="intro-action btn">Learn More</div></a>
+        <a href="#section1"><div class="intro-action btn-white">Start for Free</div></a>
+        <a href="#section1"><div class="intro-action btn">Learn More</div></a>
       </div>
     </div>
   </main>
 
-  <section class="designed-for-the-future">
+  <section id="section1" class="designed-for-the-future">
     
     <div class="section-heading">
       <h2>Designed for the future</h2>
@@ -142,35 +143,35 @@
   <footer>
     <div class="container flex">
       <div class="footer-logo">
-        <img src="/images/logo.svg" alt="logo">
+        <a href="#"><img src="/images/logo.svg" alt="logo"></a>
       </div>
       <div class="footer-menu-column">
         <h3>Product</h3>
         <ul>
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Marketplace</li>
-          <li>Features</li>
-          <li>Integrations</li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
         </ul>
       </div>
 
       <div class="footer-menu-column">
         <h3>Company</h3>
         <ul>
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>          
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>     
         </ul>
       </div>
 
       <div class="footer-menu-column">
         <h3>Connect</h3>
         <ul>
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>          
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>     
         </ul>
       </div>        
     </div>
