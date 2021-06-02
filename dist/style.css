@@ -91,7 +91,7 @@ section {
 
 .section-subheading, .state-of-the-art h2 {
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .section-body p {
@@ -221,7 +221,7 @@ header .logo {
   background-size: 220%;
   background-repeat: no-repeat;
   background-position: 26% 52%;
-  height: 700px;
+  height: 600px;
   max-height: 100vh;
   flex-direction: column;
   border-radius: 0 0 0 5rem;
@@ -255,15 +255,11 @@ header .logo {
   margin-top: 2rem;
 }
 
-.intro-action {
-  
-}
-
 /* DESIGNED FOR THE FUTURE */
 
 .designed-for-the-future {
-  margin-top: 60px;
-  padding: 5rem 0 10rem;
+  margin-top: 70px;
+  padding: 4rem 0 8rem;
   position: relative;
   color: hsl(207, 51%, 34%);
 }
@@ -277,8 +273,9 @@ header .logo {
   position: absolute;
   max-height: 100%;
   /* width: 50%; */
-  top: 0;
+  top: 50%;
   left: 55%;
+  transform: translateY(-50%);
 }
 
 /* STATE OF THE ART */
@@ -336,8 +333,8 @@ header .logo {
 
 .free-open-simple {
   position: relative;
-  margin: 0px 0 40px;
-  padding: 6rem 0 4rem;
+  margin: 30px 0 120px;
+  padding: 7rem 0 4rem;
   overflow-y: hidden;
   color: hsl(207, 51%, 34%);
 }
@@ -382,6 +379,10 @@ footer .container div {
   flex: 1 0 auto;
 }
 
+.footer-logo {
+  margin-bottom: 4rem;
+}
+
 .footer-menu-column {
   text-align: left;
 }
@@ -413,6 +414,22 @@ footer ul li a:hover {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1200px) {
+  .designed-for-the-future img, .state-of-the-art img, .free-open-simple img {
+   max-height: 70%; 
+  }
+
+  #section1, #section2, #section3 {
+    padding: 4rem 0 2rem;
+  }
+}
+
+/* @media (max-width: 950px) {
+  .designed-for-the-future img, .state-of-the-art img, .free-open-simple img {
+   max-height: 60%; 
+  }
+} */
 
 @media screen and (max-width: 767px) {
   .intro .container h1 {
