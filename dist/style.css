@@ -127,6 +127,19 @@ header .logo {
   padding-right: 2rem;
 }
 
+.burger-menu {
+  margin-right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.line1, .line2, .line3 {
+  height: 3px;
+  width: 36px;
+  margin: 6px 0;
+  background-color: white;
+}
+
 .header-nav {
   width: 100%;
   display: flex;
@@ -135,7 +148,7 @@ header .logo {
 }
 
 .main-menu {
-  display: flex;
+  align-items: center;
 }
 
 .main-menu-heading {
@@ -143,9 +156,9 @@ header .logo {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.2rem;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .main-menu-heading a {
@@ -165,7 +178,7 @@ header .logo {
   padding: 1rem;
   border-radius: 0.3rem;
   color: hsl(207, 13%, 34%);
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   font-size: 0.9rem;
   min-width: 140px;
@@ -191,10 +204,6 @@ header .logo {
 
 .account-actions {
   align-items: center;
-}
-
-.account-actions .log-in {
-  cursor: ;
 }
 
 
@@ -431,7 +440,65 @@ footer ul li a:hover {
   }
 } */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
+
+  .header-nav {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    z-index: 2000;
+    width: 80vw;
+    background-color: white;
+    border-radius: 10px;
+    color: hsl(207, 13%, 34%);
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.2rem;
+  }
+
+  .main-menu-heading {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .main-menu-dropdown {
+    position: relative;
+    background-color: #eee;
+    top: 0;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .account-actions {
+    flex-direction: column;
+    line-height: 1.2rem;
+  }
+
+  .sign-up {
+    background-color: transparent !important;
+    border: transparent;
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(347, 100%, 55%));
+    color: white;
+    padding: 0.5rem 0;
+  }
+  
+  .burger-menu {
+    display: inline-block;
+  }
+
   .intro .container h1 {
     font-size: 2rem;
   }
